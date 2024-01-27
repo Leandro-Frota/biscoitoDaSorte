@@ -1,0 +1,62 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Montserrat:wght@700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+
+    --tc-title: #34355B;
+    --bg-card: #ffffff;
+
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+
+    background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+}
+
+.app{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 43rem;
+    height: 43rem;
+    background-color: var(--bg-card);
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4rem;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+}
+
+.title{
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 2.4rem;
+    color: 
+    var(--tc-title);
+}
+
+.textMain{
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--tc-title);
+}
+
