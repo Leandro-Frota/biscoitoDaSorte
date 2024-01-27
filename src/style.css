@@ -1,29 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Dancing+Script&family=Montserrat:wght@700&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Montserrat:wght@700&display=swap');
 
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     font-size: 62.5%;
 
     --tc-title: #34355B;
     --bg-card: #ffffff;
+    --bg-textCardMensage: #E4EDF1;
+    --bg-buttonOpenCoocie:#FF9500;
 
 }
 
-body{
+body {
     width: 100vw;
     height: 100vh;
 
     background: linear-gradient(45deg, #190361 0%, #B0F 100%);
 }
 
-.app{
+.app {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -31,7 +32,7 @@ body{
     align-items: center;
 }
 
-.card{
+.card {
     width: 43rem;
     height: 43rem;
     background-color: var(--bg-card);
@@ -42,17 +43,21 @@ body{
     align-items: center;
     gap: 1.4rem;
     box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+
+    display: none;
+
+    
 }
 
-.title{
+.title,
+.titleMensage {
     text-align: center;
     font-family: Montserrat;
     font-size: 2.4rem;
-    color: 
-    var(--tc-title);
+    color:var(--tc-title);
 }
 
-.textMain{
+.textMain {
     text-align: center;
     font-family: "DM Sans";
     font-size: 1.5rem;
@@ -61,16 +66,79 @@ body{
 }
 
 
-.imageCracker:hover{
-    animation: tremer .2s ;
+.imageCracker:hover {
+    animation: tremer .2s;
     animation-iteration-count: infinite;
     cursor: pointer;
 }
 
-@keyframes tremer{
-    0% {margin-left: 0;}
-    25% {margin-left: -7px;}
-    50% {margin-left: 0;}
-    75% {margin-left: 7px;}
-    100%{margin-left:0 ;}
+.cardMensage {
+    width: 43rem;
+    height: 57rem;
+    background-color: var(--bg-card);
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.7rem;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+
+    display: block;
+
+
+}
+
+.textMensageContaier {
+    color: #000;
+    text-align: center;
+    font-family: "Dancing Script";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    background-color: var(--bg-textCardMensage);
+    box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+    padding: 1rem;
+}
+
+.buttonOpenOtherCookie{
+    display: flex;
+    padding: 16px;
+    align-items: flex-start;
+    background-color: var(--bg-buttonOpenCoocie);
+    color: #FFF;
+    border-radius: .4rem;
+    border: none;
+
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    margin-top: 4rem;
+    cursor: pointer;
+}
+
+@keyframes tremer {
+    0% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -7px;
+    }
+
+    50% {
+        margin-left: 0;
+    }
+
+    75% {
+        margin-left: 7px;
+    }
+
+    100% {
+        margin-left: 0;
+    }
 }
