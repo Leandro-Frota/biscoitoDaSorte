@@ -60,3 +60,17 @@ body{
     color: var(--tc-title);
 }
 
+
+.imageCracker:hover{
+    animation: tremer .2s ;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+@keyframes tremer{
+    0% {margin-left: 0;}
+    25% {margin-left: -7px;}
+    50% {margin-left: 0;}
+    75% {margin-left: 7px;}
+    100%{margin-left:0 ;}
+}
