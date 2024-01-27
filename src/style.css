@@ -30,9 +30,23 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: relative;
+}
+
+.open{
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.close{
+    opacity: 0;
+    visibility: hidden;
 }
 
 .card {
+    
     width: 43rem;
     height: 43rem;
     background-color: var(--bg-card);
@@ -43,10 +57,6 @@ body {
     align-items: center;
     gap: 1.4rem;
     box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
-
-    display: none;
-
-    
 }
 
 .title,
@@ -73,6 +83,13 @@ body {
 }
 
 .cardMensage {
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+
     width: 43rem;
     height: 57rem;
     background-color: var(--bg-card);
@@ -83,9 +100,6 @@ body {
     align-items: center;
     gap: 1.7rem;
     box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
-
-    display: block;
-
 
 }
 
@@ -99,6 +113,11 @@ body {
     background-color: var(--bg-textCardMensage);
     box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
     padding: 1rem;
+
+    animation: movey 4s;
+  
+    
+
 }
 
 .buttonOpenOtherCookie{
@@ -121,6 +140,8 @@ body {
     cursor: pointer;
 }
 
+
+
 @keyframes tremer {
     0% {
         margin-left: 0;
@@ -140,5 +161,17 @@ body {
 
     100% {
         margin-left: 0;
+    }
+}
+
+@keyframes movey {
+    0%{
+      
+        transform: translateY(400px);
+        scale: 0;
+    }
+
+    100%{
+         scale: 1;
     }
 }
