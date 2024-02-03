@@ -15,7 +15,8 @@ const phrases = {
                 "A maior barreira para o sucesso é o medo do fracasso.",
                 "Motivação não é sinónimo de transformação, mas um passo em sua direção.",
                 "O que empobrece o ser humano, não é a falta de dinheiro, mais sim, a falta de fé,motivação e criatividade.",
-                "O pilar do sucesso é a constância"],
+                "O pilar do sucesso é a constância",
+            "Não compense na ira o que lhe falta na razão."],
 
 }
 
@@ -26,7 +27,7 @@ imageCracker.addEventListener('click',()=>{
     cardMensage.classList.toggle('open')
     cardMensage.classList.toggle('close')
 
-    let indice = Math.round(Math.random(0,1)*10)
+    let indice = (Math.round(Math.random(0,1)*10))+1
 
     let phrase = phrases.mensage1[indice]
    
